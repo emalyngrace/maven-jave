@@ -7,9 +7,9 @@ on:
 
 jobs:
   job1:
-    runs-on: ubuntu-latest
+    runs-on: Windows
     steps:
     - name: Checkout repo
       uses: actions/checkout@v3
-    - name: retrieve output
-      uses: ./library 
+    - name: compile java code
+      run: mvn compile
